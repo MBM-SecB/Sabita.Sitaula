@@ -1,0 +1,13 @@
+C:\6th sem\net centric\CSharpBasics\bin\Debug\netcoreapp3.1\CSharpBasics.exe
+C:\6th sem\net centric\CSharpBasics\bin\Debug\netcoreapp3.1\CSharpBasics.deps.json
+C:\6th sem\net centric\CSharpBasics\bin\Debug\netcoreapp3.1\CSharpBasics.runtimeconfig.json
+C:\6th sem\net centric\CSharpBasics\bin\Debug\netcoreapp3.1\CSharpBasics.runtimeconfig.dev.json
+C:\6th sem\net centric\CSharpBasics\bin\Debug\netcoreapp3.1\CSharpBasics.dll
+C:\6th sem\net centric\CSharpBasics\bin\Debug\netcoreapp3.1\CSharpBasics.pdb
+C:\6th sem\net centric\CSharpBasics\obj\Debug\netcoreapp3.1\CSharpBasics.csprojAssemblyReference.cache
+C:\6th sem\net centric\CSharpBasics\obj\Debug\netcoreapp3.1\CSharpBasics.AssemblyInfoInputs.cache
+C:\6th sem\net centric\CSharpBasics\obj\Debug\netcoreapp3.1\CSharpBasics.AssemblyInfo.cs
+C:\6th sem\net centric\CSharpBasics\obj\Debug\netcoreapp3.1\CSharpBasics.csproj.CoreCompileInputs.cache
+C:\6th sem\net centric\CSharpBasics\obj\Debug\netcoreapp3.1\CSharpBasics.dll
+C:\6th sem\net centric\CSharpBasics\obj\Debug\netcoreapp3.1\CSharpBasics.pdb
+C:\6th sem\net centric\CSharpBasics\obj\Debug\netcoreapp3.1\CSharpBasics.genruntimeconfig.cache
