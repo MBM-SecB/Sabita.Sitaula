@@ -2,7 +2,7 @@ using System;
 
 class Ques1
 {
-    static void Main1()
+    static void Main()
     {
         Ques1 s=new Ques1();
         Console.WriteLine("enter first number :");

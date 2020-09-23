@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\6th sem\\net centric\\CSharpBasics\\CSharpBasics.csproj": {}
+    "C:\\6th sem\\net centric\\sabita sitaula\\Sabita.Sitaula\\CSharpBasics\\CSharpBasics.csproj": {}
   },
   "projects": {
-    "C:\\6th sem\\net centric\\CSharpBasics\\CSharpBasics.csproj": {
+    "C:\\6th sem\\net centric\\sabita sitaula\\Sabita.Sitaula\\CSharpBasics\\CSharpBasics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\6th sem\\net centric\\CSharpBasics\\CSharpBasics.csproj",
+        "projectUniqueName": "C:\\6th sem\\net centric\\sabita sitaula\\Sabita.Sitaula\\CSharpBasics\\CSharpBasics.csproj",
         "projectName": "CSharpBasics",
-        "projectPath": "C:\\6th sem\\net centric\\CSharpBasics\\CSharpBasics.csproj",
+        "projectPath": "C:\\6th sem\\net centric\\sabita sitaula\\Sabita.Sitaula\\CSharpBasics\\CSharpBasics.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\6th sem\\net centric\\CSharpBasics\\obj\\",
+        "outputPath": "C:\\6th sem\\net centric\\sabita sitaula\\Sabita.Sitaula\\CSharpBasics\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"

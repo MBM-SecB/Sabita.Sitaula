@@ -2,7 +2,7 @@ using System;
 
 class Ques3
 {
-    static void Main()
+    static void Main3()
     {
         Ques3 check = new Ques3();
         Console.WriteLine("Enter your name : ");
