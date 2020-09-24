@@ -21,7 +21,7 @@ namespace LearningClasses
             Popultion = population;
         }
 
-        //ststic constructor
+        //static constructor
         static Country()
         {
 
