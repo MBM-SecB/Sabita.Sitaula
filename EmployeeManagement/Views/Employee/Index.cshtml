@@ -34,7 +34,12 @@
     {
         <tr>
             <td>@(i+1)</td>
-            <td>@Model[i].FirstName</td>
+            <td>
+              @{
+                string firstName = @Model[i].FirstName;
+              }
+              <a href="/employee/detail?firstName=@firstName">@firstName</a>
+            </td>
             <td>@Model[i].Surname</td>
             <td>@Model[i].Address</td>
             <td>@Model[i].Gender</td>
