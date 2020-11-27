@@ -3,11 +3,11 @@ using System.ComponentModel.DataAnnotations;
 
 public class Employee
 {
-    [Required]
+    [Required(ErrorMessage="We need First name")]
     [Display(Name = "First Name")]
     public string FirstName { get; set; }
 
-    [Required]
+    [Required(ErrorMessage="We need your parent name")]
     [Display(Name = "Last Name")]
     public string Surname { get; set; }
     public string Address { get; set; }
