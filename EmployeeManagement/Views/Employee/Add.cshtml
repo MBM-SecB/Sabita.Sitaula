@@ -6,7 +6,7 @@
 <h1>Add new employee</h1>
 
 @* tag helpers *@
-<form asp-controller="Emp" method = "POST">
+<form asp-controller="Employee" asp-action="Add" method = "POST">
   <div class="form-group">
     <label asp-for="FirstName"></label>
     <input type="text" class="form-control" asp-for="FirstName"  placeholder="First Name">

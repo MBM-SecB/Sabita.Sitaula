@@ -1,20 +1,25 @@
 using System.Linq;
+using EmployeeManagement.Data;
 using Microsoft.AspNetCore.Mvc;
 
 public class EmployeeController : Controller
 {
-   
+    private EMSContext db;
+
+    public EmployeeController(EMSContext _db)
+    {
+        db = _db;
+    }
+
     public ActionResult Index()
     {
-        var employees = Employee.GetEmployees();
+        var employees = db.Employees.ToList();
         return View(employees);
     }
 
-    public ActionResult Detail(string firstName)
+    public ActionResult Detail(int id)
     {
-        var employees = Employee.GetEmployees();
-        var employee = employees.FirstOrDefault(x => x.FirstName == firstName);
-        
+        var employee = db.Employees.Find(id);
         return View(employee);
     }
 
@@ -24,6 +29,21 @@ public class EmployeeController : Controller
     }
 
     [HttpPost]
-   public ActionResult<bool> Add(Employee employee) => true;    //Model binding
-}
+    public ActionResult Add(Employee employee)  // Model binding
+    {
+        db.Employees.Add(employee);
+        db.SaveChanges();
 
+        return RedirectToAction(nameof(Index));
+    }
+
+    [HttpPost]
+    public ActionResult Delete(int id)
+    {
+        var employee = db.Employees.Find(id);
+        db.Employees.Remove(employee);
+        db.SaveChanges();
+
+        return RedirectToAction(nameof(Index));
+    }
+}
