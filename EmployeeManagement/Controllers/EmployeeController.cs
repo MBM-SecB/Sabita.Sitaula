@@ -1,6 +1,7 @@
 using System.Linq;
 using EmployeeManagement.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 public class EmployeeController : Controller
 {
@@ -13,7 +14,7 @@ public class EmployeeController : Controller
 
     public ActionResult Index()
     {
-        var employees = db.Employees.ToList();
+        var employees = db.Employees.Include(x => x.Department).ToList();
         return View(employees);
     }
 
@@ -42,6 +43,23 @@ public class EmployeeController : Controller
     {
         var employee = db.Employees.Find(id);
         db.Employees.Remove(employee);
+        db.SaveChanges();
+
+        return RedirectToAction(nameof(Index));
+    }
+
+    public ActionResult Edit(int id)
+    {
+        var employee = db.Employees.Find(id);
+        return View(employee);
+
+    }
+
+    [HttpPost]
+    public ActionResult Edit(Employee employee)
+    {
+        db.Employees.Attach(employee);
+        db.Employees.Update(employee);
         db.SaveChanges();
 
         return RedirectToAction(nameof(Index));
