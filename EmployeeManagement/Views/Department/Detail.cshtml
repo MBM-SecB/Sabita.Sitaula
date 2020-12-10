@@ -11,4 +11,14 @@
     <li class="list-group-item">Code : @Model.Code</li>
     <li class="list-group-item">Description : @Model.Description</li>
     <li class="list-group-item">Start Date : @Model.StartDate</li>
+    <li class="list-group-item">Employee in this department:
+        <ul class="list-group list-group-flush">
+            @foreach (var emp in Model.Employees)
+            {
+                <li class="list-group-item">@emp.FirstName</li>
+            }
+            
+        </ul>
+    </li>
+
 </ul>

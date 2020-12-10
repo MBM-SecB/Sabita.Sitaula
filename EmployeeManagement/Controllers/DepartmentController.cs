@@ -1,6 +1,7 @@
 using EmployeeManagement.Data;
 using EmployeeManagement.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 
@@ -24,7 +25,8 @@ namespace EmployeeManagement.Controllers
 
         public ActionResult Detail(int id)
         {
-            var department = db.Departments.Find(id);
+            var departments = db.Departments.Include(x => x.Employees);
+            var department = departments.FirstOrDefault(x => x.Id == id);
             return View(department);
         }
 

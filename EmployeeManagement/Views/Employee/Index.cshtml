@@ -4,7 +4,7 @@
     ViewData["Title"] = "Employee Home";
 }
 
-<h1>Displaying all Employees...</h1> 
+<h1>All Employees (@Model.Count)</h1> 
 
 <table class="table">
   <thead class="thead-dark">
@@ -15,9 +15,8 @@
       <th scope="col">Address</th>
       <th scope="col">Gender</th>
       <th scope="col">Salary</th>
-      <th scope="col">Department Name</th>
+      <th scope="col">Department</th>
 
-      <th scope="col"></th>
       <th scope="col"></th>
 
     </tr>
@@ -53,12 +52,16 @@
             <td>@Model[i].Department.Name</td> 
 
 
-            <td><a class="btn btn-outline-primary" href="/Employee/Edit?id=@Model[i].Id">Edit</a></td>
-            <form asp-controller="Employee" asp-action="Delete" asp-route-id="@Model[i].Id" method = "POST">
+            <td>
+              <a class="btn btn-warning" href="/Employee/Edit?id=@Model[i].Id">Edit</a>
+              <a class="btn btn-danger" href="/Employee/Delete?id=@Model[i].Id">Delete</a>
+            </td>
+
+            @* <form asp-controller="Employee" asp-action="Delete" asp-route-id="@Model[i].Id" method = "POST">
             <td>
               <input type="submit" value="Delete">
             </td>  
-            </form>         
+            </form>          *@
         </tr>
     }
   </tbody>

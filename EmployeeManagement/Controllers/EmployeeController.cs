@@ -26,6 +26,8 @@ public class EmployeeController : Controller
 
     public ActionResult Add()
     {
+        var Departments = db.Departments.ToList();
+        ViewData["depOptions"] = Departments;
         return View();
     }
 
@@ -38,10 +40,16 @@ public class EmployeeController : Controller
         return RedirectToAction(nameof(Index));
     }
 
-    [HttpPost]
     public ActionResult Delete(int id)
     {
         var employee = db.Employees.Find(id);
+    
+        return View(employee);
+    }
+    [HttpPost]
+    public ActionResult Delete(Employee employee)
+    {
+        db.Employees.Attach(employee);
         db.Employees.Remove(employee);
         db.SaveChanges();
 
