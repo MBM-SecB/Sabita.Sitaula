@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "twKWfDLEPK3Gdqv+MiowD3UUUzKEmSa2Bz0r1nh59A7QwtzkadN+7fd1O79R6nOi2WY1iRv9bJg3IXqsYOWzyg==",
+  "dgSpecHash": "/nVRG0gSobHPhj6unnScjF0i8sptNWgg+csHwYSiKAa1jwM1HWp0tFb6qIAsQY3O6loRWvGnBBCTxy/T4U3PhQ==",
   "success": true,
   "projectFilePath": "C:\\6th sem\\net centric\\sabita sitaula\\Sabita.Sitaula\\CSharpBasics\\CSharpBasics.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.12\\microsoft.netcore.app.host.win-x64.3.1.12.nupkg.sha512"
+  ],
   "logs": []
 }
